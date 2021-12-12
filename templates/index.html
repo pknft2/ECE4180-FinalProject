@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Surveillance Robot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+<style>
+    table ,td, tr {
+        width: 30%;
+    }
+</style>
+    <body>
+        <table style="float:left; width:100%; max-width: 400px; height:300px;">
+            <tr style="text-align:center">
+                <td>
+                    <h2>Web Controlled Surveillance Robot</h2>
+                </td>                 
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <form action="/1" method="POST">
+                        <button id="FWD" class="robot">FORWARD</button>
+                        </br>
+                    </form>
+                </td>
+            </tr>
+            <tr style="text-align: left">
+                <td style="text-align: left">
+                    <form action="/2" method="POST">
+                        <button id="LFT" class="robot">LEFT</button>
+                        <br></br>
+                    </form>
+                </td>
+                <td style="text-align: left">
+                    <form action="/3" method="POST">
+                        <button id="RGT" class="robot">RIGHT</button>
+                        </br>
+                    </form>
+                </td>
+                <td >
+                    <form action="/5" method="POST">
+                        <button id="STP" class="robot">STOP</button>
+                        </br>
+                    </form>
+                </td>                          
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <form action="/4" method="POST">
+                        <button id="REV" class="robot">REVERSE</button>
+                        </br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <form action="/6" method="POST">
+                        <button id="STRT_LN" class="robot">START LINE FOLLOWING</button>
+                        </br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <form action="/7" method="POST">
+                        <button id="STP_LN" class="robot">STOP LINE FOLLOWING</button>
+                        </br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
