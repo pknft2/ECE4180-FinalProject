@@ -32,3 +32,5 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 17. [External Power Bank](https://www.amazon.com/Alongza-Portable-Charger-10000mAh-External/dp/B082X53VDL/ref=sr_1_34?keywords=small+external+power+supply&qid=1639343777&s=electronics&sr=1-34)
 18. [Battery Cover](https://www.sparkfun.com/products/12083)
 19. [DC Barrel Power Jack](https://www.sparkfun.com/products/119)
+
+### Set Up ###
