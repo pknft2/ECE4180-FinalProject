@@ -1,5 +1,4 @@
 import RPi.GPIO as GPIO
-import pigpio
 from PWMMotor import PWMMotor
 from Speaker import Speaker
 from threading import Thread, Event
@@ -49,7 +48,8 @@ class SonarThread(Thread):
         self.sonar = sonar
         self.left_motor = left_motor
         self.right_motor = right_motor
-        self.speaker = Speaker(23)
+        self.speaker = Speaker(18)
+        self.interrupted = False
         Thread.__init__(self)
         
     def run(self):
@@ -58,12 +58,19 @@ class SonarThread(Thread):
             dists = []
             for _ in range(5):
                 dists.append(int(self.sonar.get_distance()))
-                if max(set(dists), key=dists.count) < 15:
-                    print("Interrupted")
-                    self.left_motor.stop()
-                    self.right_motor.stop()
-                    self.speaker.play_alarm()
-                time.sleep(0.25)
+            
+            if max(set(dists), key=dists.count) < 15:
+                print("Interrupted")
+                self.left_motor.stop()
+                self.right_motor.stop()
+                self.speaker.play_alarm()
+                self.left_motor.backward(0.5)
+                self.right_motor.backward(0.5)
+                time.sleep(1)
+                self.left_motor.stop()
+                self.right_motor.stop()
+                
+            time.sleep(0.25)
             dist = max(set(dists), key=dists.count)
             print(f"Dist: {dist:.1f}")
                 
@@ -71,8 +78,8 @@ class SonarThread(Thread):
 if __name__ == "__main__":
     left_motor = PWMMotor(8, 7, 12)
     right_motor = PWMMotor(9, 10, 13)
-    sonar = Sonar(18, 24)
-    speaker = Speaker(23)
+    sonar = Sonar(23, 24)
+    speaker = Speaker(18)
     left_motor.stop()
     right_motor.stop()
 
@@ -82,8 +89,11 @@ if __name__ == "__main__":
             dists.append(int(sonar.get_distance()))
             if max(set(dists), key=dists.count) < 15:
                 print("Interrupted")
-                self.speaker.play_alarm()
+                speaker.play_alarm()
+                time.sleep(6)
             time.sleep(0.25)
         dist = max(set(dists), key=dists.count)
         print(f"Dist: {dist:.1f}")
     
+
+ 
