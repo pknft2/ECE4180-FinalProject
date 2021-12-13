@@ -46,3 +46,9 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 <p align="left">
 <img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/0fe1c11d0b63ebe17f9462220c63f7d08fec130f/images/speaker.png" width="400">
 </p>
+
+#### Sonar ####
+
+<p align="left">
+<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/a6d8070e16e2f38da2f6ff92a71209e0e0f5395e/images/sonar.png" width="400">
+</p>
