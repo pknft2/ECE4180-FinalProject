@@ -115,4 +115,4 @@ Finally, to start the server, run:
 $ python server.py
 ```
 
-On your client device, navigate to <your-raspberrypi-ip-address>:8000 to view the control panel.
+On your client device, navigate to \<your-raspberrypi-ip\>:8000 to view the control panel.
