@@ -44,5 +44,5 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 #### Speaker ####
 
 <p align="left">
-<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/cd7bae4ffe6b8fe3ce1d59c48750e090fb257a88/images/speaker.png" width="400">
+<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/0fe1c11d0b63ebe17f9462220c63f7d08fec130f/images/speaker.png" width="400">
 </p>
