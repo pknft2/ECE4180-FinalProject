@@ -39,7 +39,7 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 
 ### Hardware Setup (Wiring) ###
 
-#### Obstacle Avoidance Sensor module ####
+#### Obstacle Avoidance Sensor modules ####
 
 <p align="left">
 <img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/cd7bae4ffe6b8fe3ce1d59c48750e090fb257a88/images/circuit.png" width="400">
@@ -55,4 +55,16 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 
 <p align="left">
 <img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/a6d8070e16e2f38da2f6ff92a71209e0e0f5395e/images/sonar.png" width="400">
+</p>
+
+#### Motors ####
+
+<p align="left">
+<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/58a6084d8c30eaf722c3631d64497e00d288d69c/images/motorCircuit.png" width="400">
+</p>
+
+#### Green LED ####
+
+<p align="left">
+<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/58a6084d8c30eaf722c3631d64497e00d288d69c/images/greenLED.png" width="400">
 </p>
