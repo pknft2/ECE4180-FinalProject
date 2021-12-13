@@ -3,6 +3,10 @@
 <img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/500d28cca542fc554b31a36479b3f6cfc9b4c036/IMG_5728.jpg" width="400">
 </p>
 
+## Demo Video ##
+[Click here to watch the demo video](https://drive.google.com/file/d/1T7-IjlprSwlbDVLUfga_Zg4BycERbjxR/preview)
+
+
 ## Brief Project Description ##
 
 
