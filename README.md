@@ -18,7 +18,7 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 3. [Motor](https://www.sparkfun.com/products/13302) (2)
 4. [65 mm Wheel](https://www.sparkfun.com/products/13259) (2)
 5. [Breadboard](https://www.sparkfun.com/products/12002)
-6. [Obstacle Avoidance Sensor module ](https://www.amazon.com/OSOYOO-Infrared-Obstacle-Avoidance-Arduino/dp/B01I57HIJ0)(2)
+6. [Obstacle Avoidance Sensor module](https://www.amazon.com/OSOYOO-Infrared-Obstacle-Avoidance-Arduino/dp/B01I57HIJ0)(2)
 7. [Speaker](https://www.sparkfun.com/products/11089)
 8. [Jumper Wires - Male to Male, Male to Female, and Female to Female](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_3?crid=OV5MBZZ8V4T8&keywords=male+to+male+jumper+wires&qid=1639343284&s=electronics&sprefix=male+to+male+jump%2Celectronics%2C146&sr=1-3) (120 Pack)
 9. [Resistor 1K Ohm](https://www.sparkfun.com/products/14492)
@@ -32,3 +32,17 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 17. [External Power Bank](https://www.amazon.com/Alongza-Portable-Charger-10000mAh-External/dp/B082X53VDL/ref=sr_1_34?keywords=small+external+power+supply&qid=1639343777&s=electronics&sr=1-34)
 18. [Battery Cover](https://www.sparkfun.com/products/12083)
 19. [DC Barrel Power Jack](https://www.sparkfun.com/products/119)
+
+### Hardware Setup (Wiring) ###
+
+#### Obstacle Avoidance Sensor module ####
+
+<p align="left">
+<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/cd7bae4ffe6b8fe3ce1d59c48750e090fb257a88/images/circuit.png" width="400">
+</p>
+
+#### Speaker ####
+
+<p align="left">
+<img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/cd7bae4ffe6b8fe3ce1d59c48750e090fb257a88/images/speaker.png" width="400">
+</p>
