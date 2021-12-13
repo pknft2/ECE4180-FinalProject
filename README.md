@@ -1,4 +1,8 @@
 # ECE 4180 Final Project - Dummy Bot
+
+**Team Members:** Devarsi Rawal, Christopher Burgett, Dylan Kynoch, Thomas Petrick 
+
+
 <p align="center">
 <img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/500d28cca542fc554b31a36479b3f6cfc9b4c036/IMG_5728.jpg" width="400">
 </p>
