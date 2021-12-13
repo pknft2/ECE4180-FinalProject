@@ -72,3 +72,47 @@ In this project, our team created a bluetooth-controlled robot. The robot can be
 <p align="left">
 <img src="https://github.com/tpetrick3/ECE4180-FinalProject/blob/58a6084d8c30eaf722c3631d64497e00d288d69c/images/greenLED.png" width="400">
 </p>
+
+### Software Setup ###
+
+#### Raspberry Pi ####
+
+To install Raspberry Pi OS on your Raspberry Pi 3B, follow the official instructions [here](https://www.raspberrypi.com/software/). Make sure Python 3.9.7 is installed.
+
+#### Camera Setup ####
+
+*If on Pi OS 11 (Bullseye), in order for the camera to work correctly you may need to enable graphic acceleration by running `$ sudo raspi-config` > Advanced Options > Glamor > Enable*
+
+On the Raspberry Pi, to start the video stream, run:
+```
+$ libcamera-vid -t 0 --inline --listen -o tcp://0.0.0.0:8081 -n
+```
+
+On your client (if Ubuntu), to listen to the video stream, run:
+```
+$ ffplay tcp://<your-raspberrypi-ip>:8081 -vf "setpts=N/30" -fflags nobuffer -flags low_delay -framedrop
+```
+Alternatively, you can also access the stream via VLC using:
+```
+vlc tcp/h264://<your-raspberrypi-ip>:8081
+```
+
+#### Server Setup
+
+First, clone this GitHub repository and navigate to the `code` folder using:
+```
+$ git clone https://github.com/tpetrick3/ECE4180-FinalProject.git
+$ cd ECE4180-FinalProject/code/
+```
+
+Then, run the pigpio daemon using:
+```
+$ sudo pigpiod
+```
+
+Finally, to start the server, run:
+```
+$ python server.py
+```
+
+On your client device, navigate to <your-raspberrypi-ip-address>:8000 to view the control panel.
